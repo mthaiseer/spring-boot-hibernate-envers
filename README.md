@@ -4,4 +4,4 @@ This application demonstrate how to implement audit an entity into seperate file
 1. Spring boot
 2. MySQL
 3. Hibernate envers
-4.Spring data JPA
+4. Spring data JPA
