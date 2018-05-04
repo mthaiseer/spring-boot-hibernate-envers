@@ -28,7 +28,6 @@ public class SpringSqlHibernateEnversApplicationTests {
 	}
 
 	@Test
-	@Ignore
 	public void test_create_product_sucessful() {
 
 		Product product = new Product();
@@ -46,6 +45,7 @@ public class SpringSqlHibernateEnversApplicationTests {
 
 		Optional<Product> productOptional = repository.findById(1003L);
 		Product product = productOptional.get();
+		System.out.println("[[[[["+ product+"]]]]]");
 		product.setDescription("description changed");
 		repository.save(product);
 
